@@ -20,7 +20,9 @@ chmod 777 nvim.appimage
 
 if ! test -f /usr/bin/nvim; then
     sudo cp nvim.appimage /usr/bin/nvim
-fi
+fi    
+
+rm ~/nvim.appimage
 
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 
